@@ -5,7 +5,10 @@
 
   "spm": {
     "alias": {
-      "zepto": "zepto"
+      "zepto": "zepto/zepto/1.1.6/zepto.js",
+      "zepto-fx": "zepto/zepto/1.1.6/zepto-fx.js",
+      "onepage": "zepto/zepto-onepage-scroll/1.2.2/zepto.onepagescroll.js",
+      "onepagecss": "zepto/zepto-onepage-scroll/1.2.2/onepage-scroll.css"
     },
     "output": ["main.js", "style.css"]
   }
