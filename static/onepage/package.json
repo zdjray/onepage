@@ -1,0 +1,12 @@
+{
+  "family": "examples",
+  "name": "onepage",
+  "version": "1.0.0",
+
+  "spm": {
+    "alias": {
+      "zepto": "zepto"
+    },
+    "output": ["main.js", "style.css"]
+  }
+}

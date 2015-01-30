@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Hello Sea.js</title>
+    <link rel="stylesheet" href="../static/onepage/src/style.css">
+</head>
+<body>
+
+<div class="main">
+    <section><div style="background-color: black; width: 100%; height: 100%;"><img src="http://img03.mifile.cn/webfile/images/2014/cn/goods/mi4/ma/fea-1.png"/></div></section>
+    <section><div style="background-color: black; width: 100%; height: 100%;"><img src="http://img03.mifile.cn/webfile/images/2014/cn/goods/mi4/ma/fea-31.png"/></div></section>
+</div>
+
+<script src="../sea-modules/seajs/seajs/2.2.0/sea-debug.js"></script>
+<script>
+
+    // Set configuration
+    seajs.config({
+        base: "../sea-modules/",
+        alias: {
+            "zepto": "zepto/zepto/1.1.6/zepto.js",
+            "zepto-fx": "zepto/zepto/1.1.6/zepto-fx.js",
+            "onepage": "zepto/zepto-onepage-scroll/1.2.2/zepto.onepagescroll.js",
+            "onepagecss": "zepto/zepto-onepage-scroll/1.2.2/onepage-scroll.css"
+        }
+    });
+
+    // For development
+    if (location.href.indexOf("?dev") > 0) {
+        seajs.use("../static/onepage/src/main");
+    }
+    // For production
+    else {
+        seajs.use("examples/onepage/1.0.0/main");
+    }
+</script>
+</body>
+</html>
